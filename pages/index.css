@@ -491,6 +491,11 @@ input {
   transition: var(--img-transition);
 }
 
+.explore__img-one:hover,
+.explore__img-two:hover {
+  transform: var(--img-scale);
+}
+
 .explore__overlay {
   overflow: var(--img-hidden);
 }
@@ -500,9 +505,16 @@ input {
   margin-right: 2rem;
 }
 
-.expelore__overlay:nth-child(2) {
+.explore__overlay:nth-child(2) {
   width: 120px;
   position: absolute;
   top: 2rem;
   right: 0;
+  /* top: 7rem;
+  left: 4.5rem; */
+}
+
+.explore__overlay:nth-child(1):hover,
+.explore__overlay:nth-child(2):hover {
+  border: 3px solid var(--first-color);
 }
