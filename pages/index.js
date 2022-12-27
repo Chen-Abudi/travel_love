@@ -53,3 +53,28 @@ let swiper = new Swiper(".discover__container", {
     rotate: 0,
   },
 });
+
+/* Video */
+const videoFile = document.getElementById("video-file"),
+  videoButton = document.getElementById("video-button"),
+  videoIcon = document.getElementById("video-icon");
+
+function playPause() {
+  if (videoFile.paused) {
+    // Play the video
+    videoFile.play();
+
+    // Changing the Icon here
+    videoIcon.classList.add("ri-pause-line");
+    videoIcon.classList.remove("ri-play-line");
+  } else {
+    // Pause the video
+    videoFile.pause();
+
+    // Changing the Icon here
+    videoIcon.classList.remove("ri-pause-line");
+    videoIcon.classList.add("ri-play-line");
+  }
+}
+
+videoButton.addEventListener("click", playPause);
