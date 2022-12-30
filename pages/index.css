@@ -622,3 +622,37 @@ input {
 .place__card:hover .place__img {
   transform: var(--img-scale);
 }
+
+/* Subscribe */
+.subscribe__background {
+  background-color: var(--first-color);
+  padding: 2.5rem 0;
+}
+
+.subscribe__title,
+.subscribe__description {
+  color: var(--white-color);
+}
+
+.subscribe__description {
+  margin-bottom: var(--mb-2-5);
+  text-align: center;
+}
+
+.subscribe__form {
+  background-color: var(--input-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.subscribe__input {
+  padding-right: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--input-color);
+  width: 70%;
+}
+
+.subscribe__input::placeholder {
+  color: var(--text-color);
+}
