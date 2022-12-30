@@ -656,3 +656,15 @@ input {
 .subscribe__input::placeholder {
   color: var(--text-color);
 }
+
+/* Gallery */
+.gallery__container {
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  justify-items: center;
+  row-gap: 3.5rem;
+}
+
+.gallery__img {
+  width: 100%;
+  transition: var(--img-transition);
+}
