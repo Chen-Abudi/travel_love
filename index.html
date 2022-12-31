@@ -37,18 +37,30 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link activate-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link activate-link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#discover" class="nav__link">Discover</a>
+              <a href="#discover" class="nav__link activate-link">Discover</a>
             </li>
             <li class="nav__item">
-              <a href="#place" class="nav__link">Place</a>
+              <a href="#place" class="nav__link activate-link">Place</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link activate-link"
+                >Gallery Blog</a
+              >
             </li>
           </ul>
+
+          <!-- Light/Dark Mode -->
+          <div class="nav__dark-mode">
+            <!-- Mode Change Button -->
+            <span class="modify-mode-name">Dark Mode</span>
+            <i class="ri-moon-line modify-mode" id="mode-button"></i>
+          </div>
 
           <i class="ri-close-line nav__close" id="nav-close"></i>
         </div>
@@ -489,8 +501,8 @@
         </div>
       </section>
 
-      <!-- ─────────── Gallery Section ───────────────────── -->
-      <section class="gallery section">
+      <!-- ─────────── Gallery Blog Section ───────────────────── -->
+      <section class="gallery section" id="gallery">
         <div class="gallery__container container grid">
           <ul class="gallery__content">
             <li class="gallery__img-grid">
@@ -560,6 +572,124 @@
         </div>
       </section>
     </main>
+
+    <!-- ─────────── Footer ─────────────────────────── -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__info">
+            <h3 class="footer__title">Travel with Aloha</h3>
+            <p class="footer__description">
+              The destination is <br />
+              <b>yours</b>
+              to choose, We'll offer you <br />
+              a memorable experience
+            </p>
+
+            <ul class="footer__social">
+              <li class="footer__social-link">
+                <a
+                  href="https://www.instagram.com/calibased23/"
+                  class="footer__social-icon"
+                  target="_blank"
+                >
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+
+              <li class="footer__social-link">
+                <a
+                  href="https://github.com/Chen-Abudi"
+                  class="footer__social-icon"
+                  target="_blank"
+                >
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+
+              <li class="footer__social-link">
+                <a
+                  href="https://www.linkedin.com/in/chen-abudi/"
+                  class="footer__social-icon"
+                  target="_blank"
+                >
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__info">
+            <h3 class="footer__subtitle">About</h3>
+
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">New & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__info">
+            <h3 class="footer__subtitle">Company</h3>
+
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Team</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Plans and Pricing</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Become a member</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__info">
+            <h3 class="footer__subtitle">Support</h3>
+
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Suppoer Center</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copyrights">
+            &#169; 2022-2023 Young Aloha. All rights reserved.
+          </p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Agreements & Terms</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll  -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="ri-arrow-up-line scrolltop__icon"></i>
+    </a>
 
     <!-- Swiper JS -->
     <script src="./pages/swiper-bundle.min.js"></script>
