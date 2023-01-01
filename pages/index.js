@@ -88,7 +88,7 @@ videoFile.addEventListener("ended", finiteVideo);
 function scrollToTop() {
   const scrollToTop = document.getElementById("scroll-top");
 
-  /* If the scroll is higher or equal to 220 
+  /* If the scroll is higher or equal to 280 
   viewport height, than add the scroll */
   if (this.scrollY >= 280) {
     scrollToTop.classList.add("reveal-scroll");
@@ -155,3 +155,7 @@ modeButton.addEventListener("click", () => {
   localStorage.setItem("chosen-mode", getCurrentMode());
   localStorage.setItem("chosen-icon", getCurrentIcon());
 });
+
+// .scrolltop {
+//   margin-right: -0.7rem;
+// }
