@@ -367,6 +367,7 @@ input {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  width: fit-content;
 }
 
 .home__social-link {
@@ -957,7 +958,6 @@ input {
     align-self: flex-end;
     margin-bottom: 4rem;
     flex-direction: row;
-    width: fit-content;
   }
 
   .home__info {
@@ -1024,24 +1024,25 @@ input {
 
 @media screen and (min-width: 1024px) {
   .container {
-    /* margin-right: auto;
-    margin-left: auto; */
     margin: 0 auto;
   }
 
   .home__container {
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 2fr 1.2fr;
   }
 
   .home__data {
-    width: 600px;
+    width: 580px;
+    position: relative;
+    top: 5rem;
   }
 
   .home__info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 2.5rem;
-    width: 310px;
+    width: 380px;
+    bottom: 2.5rem;
   }
 
   .home__info-title {
@@ -1051,6 +1052,88 @@ input {
   .home__info-img {
     width: 245px;
   }
+
+  .home__social {
+    margin-bottom: 2.2rem;
+  }
+
+  .about__img-one {
+    width: 240px;
+  }
+
+  .about__img-two {
+    width: 280px;
+  }
+
+  .discover__card {
+    width: 237px;
+  }
+
+  .discover__container {
+    width: 705px;
+  }
+
+  .discover__data {
+    bottom: 2rem;
+    left: 1.4rem;
+  }
+
+  .discover__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .explore__content {
+    column-gap: 4rem;
+    margin: var(--mb-1) 0;
+  }
+
+  .explore__overlay:nth-child(1) {
+    margin-right: 8rem;
+    width: 470px;
+  }
+
+  .explore__overlay:nth-child(2) {
+    top: 3.2rem;
+    width: 228px;
+  }
+
+  .video__container {
+    grid-template-columns: 1fr;
+  }
+
+  .video__description {
+    padding: 0 15rem;
+  }
+
+  .place__container {
+    gap: 3rem 2rem;
+  }
+
+  .place__card,
+  .place__img {
+    height: 270px;
+  }
+
+  .footer__content {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-height: 721px) {
+  body {
+    margin: 0;
+  }
+
+  /* .home__container,
+  .home__image {
+    height: 640px;
+  } */
 }
 
 /* Still Checking if it's needed */

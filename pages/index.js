@@ -1,4 +1,4 @@
-// ─────────── Show Menu ─────────────────────────────────────────────
+// ─────────── Show Menu ──────────────────────────────────────────────────────────────
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -18,7 +18,7 @@ if (navClose) {
   });
 }
 
-// ─────────── Remove Menu on MOBILE ────────────────────────────────
+// ─────────── Remove Menu on MOBILE ─────────────────────────────────────────────────
 const navLink = document.querySelectorAll(".nav__link");
 
 function actionLink() {
@@ -28,7 +28,7 @@ function actionLink() {
 }
 navLink.forEach((nav) => nav.addEventListener("click", actionLink));
 
-// ─────────── Modify Header Background ─────────────────────────────
+// ─────────── Modify Header Background ──────────────────────────────────────────────
 function headerScroll() {
   const header = document.getElementById("header");
   /* When the scroll is greater than 100 viewport height, 
@@ -41,7 +41,7 @@ function headerScroll() {
 }
 window.addEventListener("scroll", headerScroll);
 
-// ─────────── Swiper Discover ──────────────────────────────────────
+// ─────────── Swiper Discover ───────────────────────────────────────────────────────
 let swiper = new Swiper(".discover__container", {
   effect: "coverflow",
   grabCursor: true,
@@ -54,7 +54,7 @@ let swiper = new Swiper(".discover__container", {
   },
 });
 
-// ─── Video ────────────────────────────────────────────────────────
+// ─── Video ─────────────────────────────────────────────────────────────────────────
 const videoFile = document.getElementById("video-file"),
   videoButton = document.getElementById("video-button"),
   videoIcon = document.getElementById("video-icon");
@@ -84,7 +84,7 @@ function finiteVideo() {
 // Where/when video's ending
 videoFile.addEventListener("ended", finiteVideo);
 
-// ─── Reveal Scrollup ──────────────────────────────────────────────
+// ─── Reveal Scrollup ──────────────────────────────────────────────────────────────
 function scrollToTop() {
   const scrollToTop = document.getElementById("scroll-top");
 
@@ -98,7 +98,7 @@ function scrollToTop() {
 }
 window.addEventListener("scroll", scrollToTop);
 
-// ─── Active Link Scrollup Sections ────────────────────────────────
+// ─── Active Link Scrollup Sections ────────────────────────────────────────────────
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -122,7 +122,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-// ─── Light/Dark Mode ───────────────────────────────────────────────
+// ─── Light/Dark Mode ──────────────────────────────────────────────────────────────
 const modeButton = document.getElementById("mode-button");
 const darkMode = "dark-mode";
 const iconMode = "ri-sun-line";
@@ -154,4 +154,30 @@ modeButton.addEventListener("click", () => {
   // Saving here the user's chosen mode and its icon
   localStorage.setItem("chosen-mode", getCurrentMode());
   localStorage.setItem("chosen-icon", getCurrentIcon());
+});
+
+// ─── Animation on Revealing Scroll ───────────────────────────────────────────────
+const scroll = ScrollReveal({
+  distance: "60px",
+  duration: 2800,
+  reset: true,
+});
+
+scroll.reveal(
+  `.home__data, .home__social-link, .home__info, .discover__container,
+  .explore__data, .explore__overlay, .place__card, .gallery__content,
+  .footer__info, .footer__rights`,
+  {
+    origin: "top",
+    interval: 100,
+  }
+);
+
+scroll.reveal(`.about__data, .video__content, .subscribe__description`, {
+  origin: "left",
+});
+
+scroll.reveal(`.about__img-overlay, .video__description, .subscribe__form`, {
+  origin: "right",
+  interval: 100,
 });
