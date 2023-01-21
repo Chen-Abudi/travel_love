@@ -691,7 +691,7 @@ input {
 
 .place__img {
   transition: var(--img-transition);
-  width: 100%; /* Might need to take it off */
+  width: 100%;
 }
 
 .place__card:hover .place__img {
@@ -894,13 +894,7 @@ input {
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 0.6fr;
   }
-
-  /* .place__container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 3fr));
-  } */
 
   .subscribe__form {
     width: 480px;
