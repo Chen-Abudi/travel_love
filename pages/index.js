@@ -165,7 +165,7 @@ const scroll = ScrollReveal({
 
 scroll.reveal(
   `.home__data, .home__social-link, .home__info, .discover__container,
-  .explore__data, .explore__overlay, .place__card, .gallery__content,
+  .explore__data, .explore__overlay, .place__card, .gallery__container,
   .footer__info, .footer__rights`,
   {
     origin: "top",
@@ -173,11 +173,66 @@ scroll.reveal(
   }
 );
 
-scroll.reveal(`.about__data, .video__content, .subscribe__description`, {
-  origin: "left",
-});
+scroll.reveal(
+  `.about__img-overlay, .video__description, .subscribe__form, .gallery__title`,
+  {
+    origin: "right",
+    interval: 100,
+  }
+);
 
-scroll.reveal(`.about__img-overlay, .video__description, .subscribe__form`, {
-  origin: "right",
-  interval: 100,
+scroll.reveal(
+  `.about__data, .video__content, .subscribe__description, .filter__container`,
+  {
+    origin: "left",
+  }
+);
+
+// ─── Filtering Image Gallery ───────────────────────────────────────────────
+window.addEventListener("DOMContentLoaded", () => {
+  const filterContainer = document.querySelector(".filter__container");
+  const galleryContainer = document.querySelector(".gallery__container");
+
+  const filterImages = (evt) => {
+    document.querySelectorAll(".filter-element").forEach((element) => {
+      element.classList.remove("filter-active");
+    });
+    evt.target.classList.add("filter-active");
+
+    document.querySelectorAll(".gallery__img").forEach((element) => {
+      if (
+        (evt.target.id !== element.dataset.category) &
+        (evt.target.id !== "all")
+      ) {
+        element.classList.add("hide-image");
+      } else {
+        element.classList.remove("hide-image");
+      }
+    });
+  };
+
+  categories.forEach((element) => {
+    const domElement = document.createElement("span");
+    domElement.innerText = element.name;
+    domElement.classList.add("filter-element");
+
+    if (element.filter === "all") {
+      domElement.classList.add("filter-active");
+    }
+    domElement.id = element.filter;
+    domElement.addEventListener("click", filterImages);
+
+    filterContainer.appendChild(domElement);
+  });
+
+  images.forEach((element) => {
+    const domElement = document.createElement("img");
+
+    domElement.src = `assets/images/gallery/${element.url}`;
+    domElement.alt = element.title;
+    domElement.dataset.category = element.category;
+    domElement.classList.add("gallery__img");
+
+    galleryContainer.appendChild(domElement);
+  });
 });
