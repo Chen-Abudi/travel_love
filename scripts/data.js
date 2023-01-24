@@ -129,4 +129,40 @@ const images = [
     category: "japan",
     title: "Tokyo Skyline view, Japan",
   },
+  {
+    id: "16",
+    url: "gallery16.jpg",
+    category: "france",
+    title: "Colmar, France",
+  },
+  {
+    id: "17",
+    url: "gallery17.jpg",
+    category: "georgia",
+    title: "Batumi, Georgia",
+  },
+  {
+    id: "18",
+    url: "gallery18.jpg",
+    category: "uae",
+    title: "Miracle Garden, Dubai, UAE",
+  },
+  {
+    id: "19",
+    url: "gallery19.jpg",
+    category: "uae",
+    title: "The Frame, Dubai, UAE",
+  },
+  {
+    id: "20",
+    url: "gallery20.jpg",
+    category: "thailand",
+    title: "Doi Tung Palace, Mae Fa Luang, Thailand",
+  },
+  {
+    id: "21",
+    url: "gallery21.jpg",
+    category: "thailand",
+    title: "Nongnooch Pattaya Garden and Resort, Thailand",
+  },
 ];

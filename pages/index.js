@@ -160,7 +160,7 @@ modeButton.addEventListener("click", () => {
 const scroll = ScrollReveal({
   distance: "60px",
   duration: 2800,
-  reset: true,
+  // reset: true,
 });
 
 scroll.reveal(
