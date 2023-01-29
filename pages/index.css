@@ -1341,6 +1341,18 @@ input {
   .place__container {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
+
+  .dark-mode .nav__link {
+    color: var(--first-color-second);
+  }
+
+  .dark-mode .activate-link {
+    color: var(--white-color);
+  }
+
+  .dark-mode .activate-link::before {
+    background-color: var(--white-color);
+  }
 }
 
 /* Media Queries for Responsive Layout */
