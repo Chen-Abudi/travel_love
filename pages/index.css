@@ -1388,4 +1388,16 @@ input {
     display: flex;
     flex-direction: column;
   }
+
+  .dark-mode .nav__link {
+    color: var(--first-color-second);
+  }
+
+  .dark-mode .activate-link {
+    color: var(--white-color);
+  }
+
+  .dark-mode .activate-link::before {
+    background-color: var(--white-color);
+  }
 }
