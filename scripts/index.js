@@ -235,4 +235,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     galleryContainer.appendChild(domElement);
   });
+
+  // ───────────────────────────────────────────────────────────────────────────
 });
