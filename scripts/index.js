@@ -234,7 +234,36 @@ window.addEventListener("DOMContentLoaded", () => {
     domElement.classList.add("gallery__img");
 
     galleryContainer.appendChild(domElement);
+
+    domElement.addEventListener("click", () => exhibitImage(element));
   });
 
   // ───────────────────────────────────────────────────────────────────────────
+  const popup = document.querySelector(".popup");
+  const imageExModal = document.querySelector(".popup_type_image-ex");
+  const imageExCloseButton = document.querySelector(
+    ".popup__close-button_type_image_ex"
+  );
+
+  // Adding functionality for the popup image exhibit
+  function exhibitImage(element) {
+    const popupImage = imageExModal.querySelector(".popup__image");
+    const popupCaption = imageExModal.querySelector(".popup__caption");
+    popupImage.src = `assets/images/gallery/${element.url}`;
+    popupImage.alt = `A colorful and magnificent view of ${element.name}`;
+    popupCaption.textContent = element.title;
+
+    openModal(imageExModal);
+  }
+
+  /// Functions for the popup windows
+  function openModal(popup) {
+    popup.classList.add("popup_receptive");
+  }
+
+  function closeModal(popup) {
+    popup.classList.remove("popup_receptive");
+  }
+
+  imageExCloseButton.addEventListener("click", () => closeModal(imageExModal));
 });

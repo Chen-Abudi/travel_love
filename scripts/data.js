@@ -115,7 +115,7 @@ const images = [
     id: "13",
     url: "gallery13.jpg",
     category: "georgia",
-    title: "Batumi",
+    title: "Batumi, Georgia",
   },
   {
     id: "14",
