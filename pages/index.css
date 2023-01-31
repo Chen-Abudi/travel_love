@@ -921,7 +921,7 @@ input {
 /* Scrollup */
 .scrolltop {
   opacity: 0.9;
-  background-color: var(--first-color);
+  background-color: var(--first-color-second);
   padding: 0.6rem;
   z-index: var(--z-tooltip);
   display: flex;
