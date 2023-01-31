@@ -22,7 +22,7 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 - Swiper JS + Scroll Reveal JS (JavaScript Libraries)
 - Dark/Light Mode
 - Filtering gallery + popup modal
-- Deploy with Vercel
+- Deployed with Vercel
 
 ## 💎 Live Project
 
