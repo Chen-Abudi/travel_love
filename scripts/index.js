@@ -238,7 +238,7 @@ window.addEventListener("DOMContentLoaded", () => {
     domElement.addEventListener("click", () => exhibitImage(element));
   });
 
-  // ───────────────────────────────────────────────────────────────────────────
+  // ────── Popup Image Modal ──────────────────────────────────────────
   const popup = document.querySelector(".popup");
   const imageExModal = document.querySelector(".popup_type_image-ex");
   const imageExCloseButton = document.querySelector(
