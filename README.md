@@ -7,13 +7,11 @@
 - Intro
 - Technologies & Techniques
 - Live Project
-- Possible Improvements
-- All Project Features
 
 ## 🔎 Intro
 
 See and explore my responsive Travel (Photography Blog) landing page for a glimpse of the incredible destinations I've traveled to.
-Photos and video were taken and edited by me (and only couple were taken by fam).
+Photos and video were taken and edited by me (and only couple were taken by fam). This is a Front-End Project.
 
 ## 🛠️ Technologies & Techniques
 
@@ -23,4 +21,13 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 - Responsive Layout
 - Swiper JS + Scroll Reveal JS (JavaScript Libraries)
 - Dark/Light Mode
-- Filtering gallery
+- Filtering gallery + popup modal
+- Deploy with Vercel
+
+## 💎 Live Project
+
+---
+
+**_Visit my Travel Photography landing page_** [&#128073;&#127997; **HERE !**](https://travel-with-aloha.vercel.app/)
+
+## **Enjoy ! 🌺👋🏽**
