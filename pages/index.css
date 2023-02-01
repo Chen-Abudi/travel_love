@@ -958,7 +958,7 @@ input {
   background-color: var(--text-color-light);
 }
 
-/* Popus */
+/* Popup */
 .popup {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "Inter", Arial, sans-serif;
@@ -1050,11 +1050,6 @@ input {
 
   position: relative;
   z-index: 5;
-}
-
-.popup__overlay_type_remove-postcard {
-  gap: 38px;
-  padding: 34px 36px 36px 36px;
 }
 
 @media screen and (min-width: 568px) {
@@ -1392,15 +1387,6 @@ input {
     top: -40px;
     right: -40px;
   }
-
-  .popup__overlay_type_remove-postcard {
-    gap: 36px;
-  }
-
-  .popup__title_type_remove-postcard {
-    text-align: center;
-    font-size: 21px;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1479,9 +1465,5 @@ input {
     top: -30px;
     width: 30px;
     height: 30px;
-  }
-
-  .popup__overlay_type_remove-postcard {
-    gap: 33px;
   }
 }
