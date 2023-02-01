@@ -7,7 +7,6 @@
 - Intro
 - Technologies & Techniques
 - Live Project
-- Possible Future Improvements
 
 ## 🔎 Intro
 
