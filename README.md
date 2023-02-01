@@ -26,6 +26,6 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 
 ## 💎 Live Project
 
-`_Visit my Travel Photography landing page_` [&#128073;&#127997; **HERE !**](https://travel-with-aloha.vercel.app/)
+**_`Visit my Travel Photography landing page`_** [&#128073;&#127997; **HERE !**](https://travel-with-aloha.vercel.app/)
 
 ## **Enjoy ! 🌺👋🏽**
