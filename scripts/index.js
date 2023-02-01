@@ -246,6 +246,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Adding functionality for the popup image exhibit
   function exhibitImage(element) {
+    const popup = document.querySelector(".popup");
     const popupImage = imageExModal.querySelector(".popup__image");
     const popupCaption = imageExModal.querySelector(".popup__caption");
     popupImage.src = `assets/images/gallery/${element.url}`;
@@ -255,14 +256,34 @@ window.addEventListener("DOMContentLoaded", () => {
     openModal(imageExModal);
   }
 
-  /// Functions for the popup windows
+  // Functions for the popup windows
   function openModal(popup) {
     popup.classList.add("popup_receptive");
+    popup.addEventListener("mousedown", closeFromOverlay);
+    window.addEventListener("keydown", handleCloseByEscape);
   }
 
   function closeModal(popup) {
     popup.classList.remove("popup_receptive");
+    popup.removeEventListener("mousedown", closeFromOverlay);
+    window.removeEventListener("keydown", handleCloseByEscape);
   }
+
+  // ────── CLOSING the POPUP Image From the OVERLAY ────────────────────────
+  const closeFromOverlay = (evt) => {
+    if (evt.target === evt.currentTarget) {
+      const openedModal = document.querySelector(".popup_receptive");
+      closeModal(openedModal);
+    }
+  };
+
+  // ─────────────── The ESCAPE Key Closing the POPUP Image ──────────────────
+  const handleCloseByEscape = (evt) => {
+    if (evt.key === "Escape") {
+      const openedModal = document.querySelector(".popup_receptive");
+      closeModal(openedModal);
+    }
+  };
 
   imageExCloseButton.addEventListener("click", () => closeModal(imageExModal));
 });
