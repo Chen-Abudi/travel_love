@@ -257,9 +257,12 @@ input {
     color: var(--text-color-light);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
+    transition: all 0.3s linear;
 
     &:hover {
       color: var(--text-color);
+      text-shadow: -1px 5px 4px rgba(14, 55, 63, 0.15);
+      opacity: 0.8;
     }
   }
 

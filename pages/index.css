@@ -282,10 +282,13 @@ input {
   color: var(--text-color-light);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
+  transition: all 0.3s linear;
 }
 
 .nav__link:hover {
   color: var(--text-color);
+  text-shadow: -1px 5px 4px rgba(14, 55, 63, 0.15);
+  opacity: 0.8;
 }
 
 .nav__close {
@@ -295,6 +298,15 @@ input {
   font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
+}
+
+.ri-moon-line {
+  transition: all 0.3s ease-in;
+}
+
+.ri-moon-line:hover {
+  text-shadow: -1px 5px 3px rgba(14, 55, 63, 0.15);
+  opacity: 0.8;
 }
 
 /* Show Menu */
