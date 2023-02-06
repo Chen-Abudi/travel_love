@@ -244,9 +244,8 @@ window.addEventListener("DOMContentLoaded", () => {
     ".popup__close-button_type_image_ex"
   );
 
-  // Adding functionality for the popup image exhibit
+  // Adding functionality for the Popup image exhibit
   function exhibitImage(element) {
-    const popup = document.querySelector(".popup");
     const popupImage = imageExModal.querySelector(".popup__image");
     const popupCaption = imageExModal.querySelector(".popup__caption");
     popupImage.src = `assets/images/gallery/${element.url}`;
