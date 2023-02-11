@@ -21,8 +21,12 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 - Responsive Layout
 - Swiper JS + Scroll Reveal JS (JavaScript Libraries)
 - Dark/Light Mode
-- Filtering gallery + image popup
+- Filtering gallery + image popup blog
 - Deployed with Vercel
+
+## 🛠️ Additional Feature Very Soon
+
+- [] Adding blog to images popup in gallery.
 
 ## 💎 Live Project
 
