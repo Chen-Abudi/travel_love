@@ -243,10 +243,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const imageExCloseButton = document.querySelector(
     ".popup__close-button_type_image_ex"
   );
+  const popupImage = imageExModal.querySelector(".popup__image");
 
   // Adding functionality for the Popup image exhibit
   function exhibitImage(element) {
-    const popupImage = imageExModal.querySelector(".popup__image");
+    // const popupImage = imageExModal.querySelector(".popup__image");
     const popupCaption = imageExModal.querySelector(".popup__caption");
     popupImage.src = `assets/images/gallery/${element.url}`;
     popupImage.alt = `A colorful and magnificent view of ${element.name}`;
@@ -283,6 +284,21 @@ window.addEventListener("DOMContentLoaded", () => {
       closeModal(openedModal);
     }
   };
+
+  // ─────────────── Image Popup Flip to Blog ────────────────────────────────
+  // const flipper = document.querySelector(".popup_type_image-ex");
+  // const flipButton = document.querySelector(".popup__button");
+
+  // let flipped = false;
+
+  // flipButton.addEventListener("click", () => {
+  //   flipped = !flipped;
+
+  //   flipper.style.transform = `perspective(1000px) rotateY(${
+  //     flipped ? 180 : 0
+  //   }deg)`;
+  //   flipper.style.transition = "transform 0.8s ease-out";
+  // });
 
   imageExCloseButton.addEventListener("click", () => closeModal(imageExModal));
 });
