@@ -285,20 +285,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // ─────────────── Image Popup Flip to Blog ────────────────────────────────
-  // const flipper = document.querySelector(".popup_type_image-ex");
-  // const flipButton = document.querySelector(".popup__button");
-
-  // let flipped = false;
-
-  // flipButton.addEventListener("click", () => {
-  //   flipped = !flipped;
-
-  //   flipper.style.transform = `perspective(1000px) rotateY(${
-  //     flipped ? 180 : 0
-  //   }deg)`;
-  //   flipper.style.transition = "transform 0.8s ease-out";
-  // });
-
   imageExCloseButton.addEventListener("click", () => closeModal(imageExModal));
 });
