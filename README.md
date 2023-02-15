@@ -26,7 +26,7 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 
 ## 🛠️ Future Possible Improvements
 
-- [ ] Adding blog to images popup in gallery.
+- [ ] A blog popup can be added to each image in the gallery.
 
 ## 💎 Live Project
 
