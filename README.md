@@ -10,7 +10,7 @@
 
 ## 🔎 Intro
 
-See and explore my responsive Travel (Photography Blog) landing page for a glimpse of the incredible destinations I've traveled to.
+See and explore my responsive Travel Photography (Blog) landing page for a glimpse of the incredible destinations I've already traveled to.
 Photos and video were taken and edited by me (and only couple were taken by fam). This is a Front-End Project.
 
 ## 🛠️ Technologies & Techniques
@@ -27,7 +27,7 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 ## 🛠️ Future Possible Improvements
 
 - [ ] A blog popup could be added to each image in the gallery.
-- [ ] May add in future opportunity to buy prints of my photos (with backend side).
+- [ ] May add in the future opportunity to buy prints of my photos (with backend side).
 
 ## 💎 Live Project
 
