@@ -1,6 +1,6 @@
 # Travel with Aloha 🌺🗺️
 
-## **Developed By Chen Abudi** 👩‍💻‍
+## **Developed By Chen Abudi** 👩🏽‍💻‍
 
 ## 📢 Overview
 
@@ -20,14 +20,17 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 - CSS3 + SCSS
 - Responsive Layout
 - Swiper JS + Scroll Reveal JS (JavaScript Libraries)
-- Dark/Light Mode
+- Dark and Light Mode
 - Filtering gallery
-- Deployed with Vercel
+
+## Deployment
+
+- Vercel
 
 ## 🛠️ Future Possible Improvements
 
-- [ ] A blog popup could be added to each image in the gallery.
-- [ ] May add in the future opportunity to buy prints of my photos (with backend side).
+- [ ] Add a popup modal for each image with more details about the destination, for example, a blog post.
+- [ ] For future purposes, might add an opportunity to buy prints of my photos, meaning (Backend)
 
 ## 💎 Live Project
 
