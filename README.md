@@ -17,9 +17,10 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 
 - JavaScript
 - HTML5
-- CSS3 + SCSS
-- Responsive Layout
+- CSS3
+- SCSS
 - Swiper JS + Scroll Reveal JS (JavaScript Libraries)
+- Responsive Layout
 - Dark and Light Mode
 - Filtering gallery
 
@@ -36,4 +37,4 @@ Photos and video were taken and edited by me (and only couple were taken by fam)
 
 **_`Visit my Travel Photography landing page`_** [&#128073;&#127997; **HERE !**](https://travel-with-aloha.vercel.app/)
 
-## **Enjoy ! 🌺👋🏽**
+## **Enjoy! 🌺👋🏽**
